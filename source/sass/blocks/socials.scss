@@ -1,0 +1,59 @@
+.socials {
+	margin-bottom: 30px;
+}
+
+.socials__list {
+	@include reset-list();
+	display: flex;
+	justify-content: space-between;
+}
+
+.socials__link {
+	display: block;
+	position: relative;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	color: #ffffff;
+	font-size: 0;
+	background-color: $maroon-bg;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 18px 18px;	
+}
+
+.socials__link--inst {
+	background-image: url("../img/ico-inst.svg");
+
+	&:hover {
+		background-image: url("../img/ico-inst-hover.svg");
+	}
+}
+
+.socials__link--fb {
+	background-image: url("../img/ico-fb.svg");
+
+	&:hover {
+		background-image: url("../img/ico-fb-hover.svg");
+	}
+}
+
+.socials__link--whats {
+	background-image: url("../img/ico-whats.svg");
+
+	&:hover {
+		background-color: #ffffff;
+		box-sizing: border-box;
+		border: 10px solid $maroon-bg;
+		background-image: url("../img/ico-whats-hover.svg");
+	}
+}
+
+.socials__link--vk {
+	background-image: url("../img/ico-vk.svg");
+
+	&:hover {
+		background-image: url("../img/ico-vk-hover.svg");
+	}
+}
+

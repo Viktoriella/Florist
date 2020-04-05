@@ -6,11 +6,13 @@ var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
+var svgstore = require("gulp-svgstore");
+var rename = require("gulp-rename");
 
 gulp.task("copy", function () {
   return gulp.src([
     "source/*.html",
-    "source/fonts/**",
+    "source/fonts/*.{woff,woff2}",
     "source/img/**",
     "source/js/**"
   ], {
@@ -28,6 +30,15 @@ gulp.task("style", function() {
     ]))
   .pipe(gulp.dest("build/css"))
   .pipe(server.stream());
+});
+
+gulp.task("sprite", function () {
+  return gulp.src("source/img/ico-*.svg")
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("html", function() {
@@ -54,4 +65,4 @@ gulp.task("serve", function() {
   //   .on("change", server.reload);
 });
 
-gulp.task("build", gulp.series("copy", "serve"));
+gulp.task("build", gulp.series("copy", "sprite", "serve"));

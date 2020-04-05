@@ -5,16 +5,20 @@
 	<title>Магазин цветов</title>
 	<meta name="description" content="Цветочный магазин предлагает широкий ассортимент цветов, украшений и невероятного оформления">
 	<meta name="keywords" content="Цветочный магазин, флористы, флористика, свадебные букеты">
+	<link rel="stylesheet" href="css/style.css">
 </head>
-<body style="background-color: #3b181e; color: #ffffff;">           
+<body>
+<div style="display: none">
+	<include src="build/img/sprite.svg"></include>
+</div>
 	<header class="page-header">
 		<div class="main-logo">
-			<img src="img/logo.svg">
+			<img src="img/logo.svg" width="96" height="29" alt="Весна всегда">
 		</div>
 		<nav class="main-nav">
 			 <ul class="main-nav__list">
 			 	 <li class="main-nav__item">
-			 	 	<a class="main-nav__link" href="#">Свадебная флористика</a>
+			 	 	<a class="main-nav__link main-nav__link--active">Свадебная флористика</a>
 			 	 </li>
 			 	 <li class="main-nav__item">
 			 	 	<a class="main-nav__link" href="events.html">Букеты на любые мероприятия</a>
@@ -28,7 +32,7 @@
 			 	 <li class="main-nav__item">
 			 	 	<a class="main-nav__link" href="decoration.html">Оформление мероприятий</a>
 			 	 </li>
-			 	 <button type="button">Закрыть меню</button> 
+			 	 <button type="button" class="main-nav__burger">Закрыть меню</button>
 			 </ul>
 		</nav>
 		<section class="intro">
@@ -38,28 +42,28 @@
 			<section class="socials">
 				<ul class="socials__list">
 					<li class="socials__item">
-						<a class="solials__link" href="#">Инстаграм</a>
+						<a class="socials__link socials__link--inst" href="#">Инстаграм</a>
 					</li>
 					<li class="socials__item">
-						<a class="solials__link" href="#">Facebook</a>
+						<a class="socials__link socials__link--fb" href="#">Facebook</a>
 					</li>
 					<li class="socials__item">
-						<a class="solials__link" href="#">WhatsApp</a>
+						<a class="socials__link socials__link--whats" href="#">WhatsApp</a>
 					</li>
 					<li class="socials__item">
-						<a class="solials__link" href="#">VKontakte</a>
+						<a class="socials__link socials__link--vk" href="#">VKontakte</a>
 					</li>
 				</ul>
 			</section>
-			<a href="#">Листать дальше</a>
+			<a class="intro__down-link" href="#">Листать дальше</a>
 		</section>	
 	</header>
 
-	<main>
+	<main class="page-main">
 		<section class="catalog-main">
 			<h2 class="catalog-main__title">Каталог услуг</h2>
 			<ul class="catalog-main__list">
-				<li class="catalog-main__item">               
+				<li class="catalog-main__item catalog-main__item--1">               
 					<a class="catalog-main__link" href="#">
 						<p class="catalog-main__number">01</p>
 						<p class="catalog-main__text">Букет невесты и свадебное оформление</p>

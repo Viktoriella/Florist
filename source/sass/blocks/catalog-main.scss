@@ -1,0 +1,32 @@
+.catalog-main__title {
+	@include reset();
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-size: 20px;
+	letter-spacing: 0.06em;
+	font-weight: normal;
+}
+
+.catalog-main__list {
+	@include reset-list();
+}
+
+.catalog-main__item {
+	height: 392px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 23px;
+	padding-bottom: 15px;
+	background-repeat: no-repeat;
+}
+
+.catalog-main__item--1 {
+	background-image: url("../img/catalog-1-mobile.jpg");
+}
+
+.catalog-main__link {
+	font-size: 16px;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
