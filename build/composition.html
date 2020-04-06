@@ -5,15 +5,17 @@
 	<title>Магазин цветов</title>
 	<meta name="description" content="Цветочный магазин предлагает широкий ассортимент цветов, украшений и невероятного оформления">
 	<meta name="keywords" content="Цветочный магазин, флористы, флористика, свадебные букеты">
+	<meta name="viewport" content="width=device-width,initiate-scale=1">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body style="background-color: #3b181e; color: #ffffff;">           
+<body>
 	<header class="page-header">
-		<div class="main-logo">
-			<img src="img/logo.svg">
-		</div>
+		<a class="main-logo" href="index.html">
+			<img src="img/logo.svg" width="96" height="29" alt="Весна всегда">
+		</a>
 		<nav class="main-nav">
-			 <ul class="main-nav__list">
+			<button type="button" class="main-nav__burger main-nav__burger--closed main-nav__burger--nojs">Закрыть меню</button>
+			 <ul class="main-nav__list main-nav__list--closed main-nav__list--nojs">
 			 	 <li class="main-nav__item">
 			 	 	<a class="main-nav__link" href="index.html">Свадебная флористика</a>
 			 	 </li>
@@ -24,23 +26,22 @@
 			 	 	<a class="main-nav__link" href="wedding.html">Букеты невесты</a>	
 			 	 </li>
 			 	 <li class="main-nav__item">
-			 	 	<a class="main-nav__link">Композиции</a>
+			 	 	<a class="main-nav__link main-nav__link--active">Композиции</a>
 			 	 </li>
-			 	 <li class="main-nav__item">
+			 	<li class="main-nav__item">
 			 	 	<a class="main-nav__link" href="decoration.html">Оформление мероприятий</a>
 			 	 </li>
-			 	 <button type="button">Закрыть меню</button> 
 			 </ul>
 		</nav>
 	</header>
 
-	<main class="page-main inner">
+	<main class="page-main page-main__inner inner">
 		<img class="inner__main-image" src="img/composition-main-mobile.jpg" alt="Букет">
 		<h1 class="inner__title">Композиции и шляпные коробки</h1>
 		<p class="inner__text">
 			Композиции могут собираться в любой таре: корзинке, шляпной коробке, вазочке или декоративных ящиках. Их нет необходимости ставить в вазу как букеты, потому что цветы питаются при помощи специальной флористической губки «Оазис». Композиции очень удобные для подарка или оформления мероприятия.
 		</p>
-		<button type="button order__button">Заказать</button>
+		<a class="button inner__order-button" href="#">Заказать</a>
 		<ul class="gallery">
 			<li class="gallery__item">
 				<img src="img/composition-small-1-mobile.jpg" alt="Букет">
@@ -69,7 +70,7 @@
 		</ul>
 	</main>
 
-	<footer class="pege-footer">
+	<footer class="page-footer">
 		<section class="breadcrumps">
 			<ul class="breadcrumps__list">
 				<li class="breadcrumps__item">
@@ -91,21 +92,21 @@
 		</section>
 
 		<section class="socials socials__footer">
-				<ul class="socials__list">
-					<li class="socials__item">
-						<a class="solials__link" href="#">Инстаграм</a>
-					</li>
-					<li class="socials__item">
-						<a class="solials__link" href="#">Facebook</a>
-					</li>
-					<li class="socials__item">
-						<a class="solials__link" href="#">WhatsApp</a>
-					</li>
-					<li class="socials__item">
-						<a class="solials__link" href="#">VKontakte</a>
-					</li>
-				</ul>
-			</section>
+			<ul class="socials__list">
+				<li class="socials__item">
+					<a class="socials__link socials__link--footer socials__link--inst" href="#">Инстаграм</a>
+				</li>
+				<li class="socials__item">
+					<a class="socials__link socials__link--footer socials__link--fb" href="#">Facebook</a>
+				</li>
+				<li class="socials__item">
+					<a class="socials__link socials__link--footer socials__link--whats socials__link--whats--footer" href="#">WhatsApp</a>
+				</li>
+				<li class="socials__item">
+					<a class="socials__link socials__link--footer socials__link--vk" href="#">VKontakte</a>
+				</li>
+			</ul>
+		</section>
 	</footer>
 
 	<div class="popup">
@@ -115,9 +116,14 @@
 		<form class="popup__order-form" action="#" method="post">
 			<input class="popup__text-input" type="text" name="username" placeholder="Имя">
 			<input class="popup__text-input" type="text" name="phone" placeholder="Телефон">
-			<button class="button popup__button" type="submit">Позвоните мне</button>
+			<button class="button popup__submit" type="submit">Позвоните мне</button>
 			<button class="popup__close" type="button">Закрыть</button>
 		</form>
 	</div>
+
+	<div class="popup__overlay"></div>
+
+	<script type="text/javascript" src="js/showMenu.js"></script>
+	<script type="text/javascript" src="js/showPopupInner.js"></script>
 </body>
 </html>

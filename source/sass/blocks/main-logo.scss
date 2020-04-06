@@ -1,5 +1,12 @@
 .main-logo {
+	display: block;
 	width: 96px;
 	height: 29px;
-	margin: 0 auto;
+	margin-left: 16px; 
+	margin-bottom: 20px;
+}
+
+.main-logo--center {
+	margin-left: auto;
+	margin-right: auto;
 }

@@ -1,14 +1,89 @@
 .main-nav {
-	padding-top: 74px;
-	padding-left: 70px;
-	padding-right: 70px;
-	padding-bottom: 42px;
+	position: relative;
+	background-color: $maroon-bg;
+	z-index: 1;
+}
+
+.main-nav--nojs {
+	display: block;
+	position: static;
+}
+
+.main-nav__burger {
+	position: absolute;
+	display: block;
+	right: 20px;
+	top: -55px;
+	width: 37px;
+	height: 37px;
+	background-color: transparent;
+	font-size: 0;
+	border: none;
+	cursor: pointer;
+
+	&::before {
+		@include pseudo();
+	}
+
+	&::after {
+		@include pseudo();
+	}
+}
+
+.main-nav__burger--closed {
+	&::before {
+		top: 12px;
+		height: 10px;
+		width: 37px;
+		background: none;
+		border-top: 1px solid #ffffff;
+		border-bottom: 1px solid #ffffff;
+	}
+}
+
+.main-nav__burger--opened {
+	&::before {
+		height: 1px;
+		width: 30px;
+		background-color: rgba(255, 255, 255, 0.5);
+		transform: rotate(45deg);
+		top: 17px;
+		left: 3px;
+	}
+
+	&::after {
+		height: 1px;
+		width: 30px;
+		top: 17px;
+		left: 3px;
+		background-color: rgba(255, 255, 255, 0.5);
+		transform: rotate(-45deg);
+	}	
+}
+
+.main-nav__burger--nojs {
+	display: none;
 }
 
 .main-nav__list {
+	background-color: $maroon-bg;
 	@include reset-list();
+	position: absolute;
+	padding-top: 54px;
+	padding-left: 70px;
+	padding-right: 70px;
+	padding-bottom: 42px;
 	text-align: center;
 	text-transform: uppercase;
+}
+
+.main-nav__list--closed {
+	display: none;
+}
+
+.main-nav__list--show {
+	display: block;
+	position: static;
 }
 
 .main-nav__link {
@@ -22,41 +97,18 @@
 	letter-spacing: 0.09em;
 }
 
+.main-nav__link[href] {
+	&:hover {
+		color: #ffffff;
+	}
+
+	&:active {
+		color: #ffffff;
+	}
+}
+
 .main-nav__link--active {
 	font-size: 25px;
 	line-height: 28px;
 	color: #ffffff;
-}
-
-.main-nav__burger {
-	position: absolute;
-	display: block;
-	right: 25px;
-	top: 25px;
-	width: 21px;
-	height: 21px;
-	background-color: transparent;
-	font-size: 0;
-	border: none;
-	cursor: pointer;
-
-	&::before {
-		@include pseudo();
-		height: 1px;
-		width: 25px;
-		top: 10px;
-		left: -2px;
-		background-color: rgba(255, 255, 255, 0.5);
-		transform: rotate(45deg);
-	}
-
-	&::after {
-		@include pseudo();
-		height: 1px;
-		width: 25px;
-		top: 10px;
-		left: -2px;
-		background-color: rgba(255, 255, 255, 0.5);
-		transform: rotate(-45deg);
-	}
 }

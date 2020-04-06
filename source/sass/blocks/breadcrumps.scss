@@ -1,0 +1,27 @@
+.breadcrumps {
+	padding-top: 30px;
+	margin-bottom: 50px;
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.breadcrumps__list {
+	@include reset-list();
+	text-align: center;
+}
+
+.breadcrumps__link {
+	display: block;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 16px;
+	text-decoration: none;
+
+	&:hover {
+		color: rgba(255, 255, 255, 1);
+	}
+
+	&:active {
+		color: rgba(255, 255, 255, 1);
+	}
+}

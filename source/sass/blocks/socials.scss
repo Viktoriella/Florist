@@ -22,10 +22,15 @@
 	background-size: 18px 18px;	
 }
 
+.socials__link--footer {
+	background-size: 25px 25px;	
+}
+
 .socials__link--inst {
 	background-image: url("../img/ico-inst.svg");
 
-	&:hover {
+	&:hover,
+	&:active {
 		background-image: url("../img/ico-inst-hover.svg");
 	}
 }
@@ -33,7 +38,8 @@
 .socials__link--fb {
 	background-image: url("../img/ico-fb.svg");
 
-	&:hover {
+	&:hover,
+	&:active {
 		background-image: url("../img/ico-fb-hover.svg");
 	}
 }
@@ -41,18 +47,27 @@
 .socials__link--whats {
 	background-image: url("../img/ico-whats.svg");
 
-	&:hover {
+	&:hover,
+	&:active {
 		background-color: #ffffff;
 		box-sizing: border-box;
-		border: 10px solid $maroon-bg;
+		border: 9px solid $maroon-bg;
 		background-image: url("../img/ico-whats-hover.svg");
+	}
+}
+
+.socials__link--whats--footer {
+	&:hover,
+	&:active {
+		border: 5px solid $maroon-bg;
 	}
 }
 
 .socials__link--vk {
 	background-image: url("../img/ico-vk.svg");
 
-	&:hover {
+	&:hover,
+	&:active {
 		background-image: url("../img/ico-vk-hover.svg");
 	}
 }

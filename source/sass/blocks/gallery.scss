@@ -1,0 +1,12 @@
+.gallery {
+	@include reset-list();
+	display: flex;
+	overflow: hidden;
+	margin-left: 20px;
+	margin-right: 0;
+	margin-bottom: 45px;
+}
+
+.gallery__item {
+	margin-right: 15px;
+}
