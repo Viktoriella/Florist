@@ -14,7 +14,7 @@
 </div>
 	<header class="page-header">
 		<a class="main-logo">
-			<img src="img/logo.svg" width="96" height="29" alt="Весна всегда">
+			<img class="main-logo__image" src="img/logo.svg" alt="Весна всегда">
 		</a>
 		<nav class="main-nav">
 			<button type="button" class="main-nav__burger main-nav__burger--closed main-nav__burger--nojs">Закрыть меню</button>
@@ -64,50 +64,57 @@
 		<section class="catalog-main" id="catalog-main">
 			<h2 class="catalog-main__title">Каталог услуг</h2>
 			<ul class="catalog-main__list">
-				<li class="catalog-main__item catalog-main__item--1">               
-					<a class="catalog-main__link" href="#">
-						<p class="catalog-main__number">01</p>
-						<p class="catalog-main__text">Букет невесты и свадебное оформление</p>
-					</a>
-				</li>
-				<li class="catalog-main__item visually-hidden">
-					<a class="catalog-main__link" href="#">
-						<p class="catalog-main__number">02</p>
-						<p class="catalog-main__text">Букеты на торжества</p>
-					</a>
-				</li>
-				<li class="catalog-main__item visually-hidden">
-					<a class="catalog-main__link" href="#">
-						<p class="catalog-main__number">03</p>
-						<p class="catalog-main__text">Композиции</p>
-					</a>
-				</li>
-				<li class="catalog-main__item visually-hidden">
-					<a class="catalog-main__link" href="#">
-						<p class="catalog-main__number">04</p>
-						<p class="catalog-main__text">Оформление композиций</p>
-					</a>					
-				</li>
+				<div class="catalog-main__wrapper">
+					<li class="catalog-main__item catalog-main__item--1">               
+						<a class="catalog-main__link" href="#">
+							<p class="catalog-main__number">01</p>
+							<p class="catalog-main__text">Букет невесты и свадебное оформление</p>
+						</a>
+					</li>
+					<li class="catalog-main__item catalog-main__item--2">
+						<a class="catalog-main__link" href="#">
+							<p class="catalog-main__number">02</p>
+							<p class="catalog-main__text">Букеты на торжества</p>
+						</a>
+					</li>
+				</div>
+				<div class="catalog-main__wrapper visually-hidden">
+					<li class="catalog-main__item visually-hidden">
+						<a class="catalog-main__link" href="#">
+							<p class="catalog-main__number">03</p>
+							<p class="catalog-main__text">Композиции</p>
+						</a>
+					</li>
+					<li class="catalog-main__item visually-hidden">
+						<a class="catalog-main__link" href="#">
+							<p class="catalog-main__number">04</p>
+							<p class="catalog-main__text">Оформление композиций</p>
+						</a>					
+					</li>
+				</div>
 			</ul>
 			
 			<ul class="catalog-main__pagination">
-				<li class="catalog-main__pagination-item">
+				<li class="catalog-main__pagination-item catalog-main__pagination-item--1">
 					<button class="catalog-main__pagination-button catalog-main__pagination-button--active" type="button">1</button>
 				</li>
-				<li class="catalog-main__pagination-item">
+				<li class="catalog-main__pagination-item catalog-main__pagination-item--2">
 					<button class="catalog-main__pagination-button" type="button">2</button>
 				</li>
-				<li class="catalog-main__pagination-item">
+				<li class="catalog-main__pagination-item catalog-main__pagination-item--3">
 					<button class="catalog-main__pagination-button" type="button">3</button>
 				</li>
-				<li class="catalog-main__pagination-item">
+				<li class="catalog-main__pagination-item catalog-main__pagination-item--4">
 					<button class="catalog-main__pagination-button" type="button">4 </button>
 				</li>
 			</ul>
 		</section>
 
 		<section class="actions">
-			<img class="actions__image" src="img/actions-mobile.jpg" alt="Акция на свадебное оформление" width="288" height="170">
+			<picture>
+				<source media="(min-width: 768px)" srcset="img/actions-tablet.jpg">
+				<img class="actions__image" src="img/actions-mobile.jpg" alt="Акция на свадебное оформление">
+			</picture>
 			<h2 class="actions__title">Акционные предложения</h2>
 			<p class="actions__description">При заказе свадебного оформления предоставляется скидка на букет невесты и бутоньерку в размере 30%</p>
 			<a class="button actions__button" href="#">Заказать оформление</a>

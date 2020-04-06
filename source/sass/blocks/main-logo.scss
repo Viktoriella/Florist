@@ -4,9 +4,27 @@
 	height: 29px;
 	margin-left: 16px; 
 	margin-bottom: 20px;
+
+	@media (min-width: $tablet-width) {
+		margin-left: 50px;
+	}
 }
 
 .main-logo--center {
 	margin-left: auto;
 	margin-right: auto;
+
+	@media (min-width: $tablet-width) {
+		margin-top: 112px;
+	}
+}
+
+.main-logo__image {
+	width: 96px;
+	height: 29px;
+
+	@media (min-width: $tablet-width) {
+		width: 137px;
+		height: 47px;
+	}
 }

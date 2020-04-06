@@ -11,7 +11,7 @@
 <body>
 	<header class="page-header">
 		<a class="main-logo" href="index.html">
-			<img src="img/logo.svg" width="96" height="29" alt="Весна всегда">
+			<img class="main-logo__image" src="img/logo.svg" alt="Весна всегда">
 		</a>
 		<nav class="main-nav">
 			<button type="button" class="main-nav__burger main-nav__burger--closed main-nav__burger--nojs">Закрыть меню</button>
@@ -36,38 +36,67 @@
 	</header>
 
 	<main class="page-main page-main__inner inner">
-		<img class="inner__main-image" src="img/decoration-main-mobile.jpg" alt="Букет">
-		<h1 class="inner__title">Оформление мероприятий</h1>
-		<p class="inner__text">
-			Мы оформим любое мероприятие в выбранном вами стиле. Рождество, Хеллоуин, день рождения или любое другое мероприятие могут превратиться в настоящую сказку всего лишь благодаря оформлению. Полную коллекцию оформлений в разнообразных стилях вы можете посмотреть в нашем Инстаграмме.
-		</p>
-		<a class="button inner__order-button" href="#">Заказать</a>
-		<ul class="gallery">
-			<li class="gallery__item">
-				<img src="img/events-small-1-mobile.jpg" alt="Букет">
-			</li>
-			<li class="gallery__item">
-				<img src="img/events-small-2-mobile.jpg" alt="Букет">
-			</li>
-			<li class="gallery__item">
-				<img src="img/events-small-3-mobile.jpg" alt="Букет">
-			</li>
-			<li class="gallery__item">
-				<img src="img/events-small-4-mobile.jpg" alt="Букет">
-			</li>
-			<li class="gallery__item">
-				<img src="img/events-small-5-mobile.jpg" alt="Букет">
-			</li>
-			<li class="gallery__item">
-				<img src="img/events-small-6-mobile.jpg" alt="Букет">
-			</li>
-			<li class="gallery__item">
-				<img src="img/events-small-7-mobile.jpg" alt="Букет">
-			</li>
-			<li class="gallery__item">
-				<img src="img/events-small-8-mobile.jpg" alt="Букет">
-			</li>
-		</ul>
+		<picture>
+			<source media="(min-width: 768px)" srcset="img/decoration-main-tablet.jpg">
+			<img class="inner__main-image" src="img/decoration-main-mobile.jpg" alt="Букет">
+		</picture>
+		<div class="inner__wrapper">
+			<h1 class="inner__title">Оформление мероприятий</h1>
+			<p class="inner__text">
+				Мы оформим любое мероприятие в выбранном вами стиле. Рождество, Хеллоуин, день рождения или любое другое мероприятие могут превратиться в настоящую сказку всего лишь благодаря оформлению. Полную коллекцию оформлений в разнообразных стилях вы можете посмотреть в нашем Инстаграмме.
+			</p>
+			<a class="button inner__order-button" href="#">Заказать</a>
+			<ul class="gallery">
+				<li class="gallery__item">
+					<picture>
+						<source media="(min-width: 768px)" srcset="img/decoration-small-1-tablet.jpg">
+						<img src="img/decoration-small-1-mobile.jpg" alt="Букет">
+					</picture>
+				</li>
+				<li class="gallery__item">
+					<picture>
+						<source media="(min-width: 768px)" srcset="img/decoration-small-2-tablet.jpg">
+						<img src="img/decoration-small-2-mobile.jpg" alt="Букет">
+					</picture>
+				</li>
+				<li class="gallery__item">
+					<picture>
+						<source media="(min-width: 768px)" srcset="img/decoration-small-3-tablet.jpg">
+						<img src="img/decoration-small-3-mobile.jpg" alt="Букет">
+					</picture>
+				</li>
+				<li class="gallery__item">
+					<picture>
+						<source media="(min-width: 768px)" srcset="img/decoration-small-4-tablet.jpg">
+						<img src="img/decoration-small-4-mobile.jpg" alt="Букет">
+					</picture>
+				</li>
+				<li class="gallery__item">
+					<picture>
+						<source media="(min-width: 768px)" srcset="img/decoration-small-5-tablet.jpg">
+						<img src="img/decoration-small-5-mobile.jpg" alt="Букет">
+					</picture>
+				</li>
+				<li class="gallery__item">
+					<picture>
+						<source media="(min-width: 768px)" srcset="img/decoration-small-6-tablet.jpg">
+						<img src="img/decoration-small-6-mobile.jpg" alt="Букет">
+					</picture>
+				</li>
+				<li class="gallery__item">
+					<picture>
+						<source media="(min-width: 768px)" srcset="img/decoration-small-7-tablet.jpg">
+						<img src="img/decoration-small-7-mobile.jpg" alt="Букет">
+					</picture>
+				</li>
+				<li class="gallery__item">
+					<picture>
+						<source media="(min-width: 768px)" srcset="img/decoration-small-8-tablet.jpg">
+						<img src="img/decoration-small-8-mobile.jpg" alt="Букет">
+					</picture>
+				</li>
+			</ul>
+		</div>
 	</main>
 
 	<footer class="page-footer">

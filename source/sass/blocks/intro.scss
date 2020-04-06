@@ -6,6 +6,13 @@
 	text-align: center;
 	padding-left: 35px;
 	padding-right: 35px;
+
+	@media (min-width: $tablet-width) {
+		min-height: 693px;
+		margin-top: -88px;
+		padding-top: 331px;
+		background-image: url("../img/bg-main-tablet.jpg");
+	}
 }
 
 .intro__title {
@@ -17,6 +24,14 @@
 	text-transform: uppercase;
 	font-size: 30px;
 	line-height: 42px;
+
+	@media (min-width: $tablet-width) {
+		margin-bottom: 82px;
+		font-family: Forum;
+		font-size: 70px;
+		line-height: 77px;
+		letter-spacing: 0.09em;
+	}
 }
 
 .intro__link {
@@ -24,14 +39,27 @@
 	border: 1px solid #ffffff;
 	box-sizing: border-box;
 	margin-bottom: 70px;
+
+	@media (min-width: $tablet-width) {
+		margin-bottom: 211px;
+	}
 }
 
 .intro__down-link {
 	display: block;
-	background-image: url("../img/ico-arrow.svg");
-	background-position: center center;
-	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
 	background-size: 18px 18px;	
 	color: #ffffff;
 	font-size: 0;
+	background-image: url("../img/ico-arrow.svg");
+	background-position: center center;
+	background-repeat: no-repeat;
+
+	@media (min-width: $tablet-width) {
+		width: 29px;
+		height: 29px;
+		margin: 0 auto;
+		background-size: 29px 29px;
+	}
 }

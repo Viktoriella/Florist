@@ -15,4 +15,12 @@
 		background-color: #ffffff;
 		color: #000000;
 	}
+
+	@media (min-width: $tablet-width) {
+		padding-left: 40px;
+		padding-right: 40px;
+		padding-top: 22px;
+		padding-bottom: 21px;
+		font-size: 15px;
+	}
 }

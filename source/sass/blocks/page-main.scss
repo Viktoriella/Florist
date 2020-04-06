@@ -2,6 +2,11 @@
 	padding-top: 100px;
 	padding-left: 16px;
 	padding-right: 15px;
+
+	@media (min-width: $tablet-width) {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
 }
 
 .page-main__inner {

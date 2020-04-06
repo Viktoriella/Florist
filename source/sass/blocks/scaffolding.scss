@@ -21,6 +21,10 @@ body {
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 22px;
+
+	@media (min-width: $tablet-width) {
+		width: $tablet-width;
+	}
 }
 
 .visually-hidden {

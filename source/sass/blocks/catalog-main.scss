@@ -1,5 +1,9 @@
 .catalog-main {
 	margin-bottom: 100px;
+
+	@media (min-width: $tablet-width) {
+		text-align: center;
+	}
 }
 
 .catalog-main__list {
@@ -7,6 +11,11 @@
 	position: relative;
 	min-height: 392px;
 	margin-bottom: 20px;
+
+	@media (min-width: $tablet-width) {
+		min-height: 450px;
+		margin-bottom: 30px;
+	}
 }
 
 .catalog-main__title {
@@ -16,18 +25,65 @@
 	font-size: 20px;
 	letter-spacing: 0.06em;
 	font-weight: normal;
+
+	@media (min-width: $tablet-width) {
+		position: relative;
+		margin-bottom: 30px;
+		padding-bottom: 22px;
+		font-size: 30px;
+
+		&::after {
+			@include pseudo();
+			width: 85px;
+			height: 2px;
+			top: auto;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			background-color: #ffffff;
+		}
+	}
+}
+
+.catalog-main__wrapper {
+	@media (min-width: $tablet-width) {
+		position: absolute;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
 }
 
 .catalog-main__item {
 	position: absolute;
 	top: 0;
 	left: 0;
-	height: 392px;
+	min-height: 392px;
+	width: 288px;
 	background-repeat: no-repeat;
+
+	@media (min-width: $tablet-width) {
+		position: static;
+		min-height: 450px;
+		width: 330px;
+	}
 }
 
 .catalog-main__item--1 {
 	background-image: url("../img/catalog-1-mobile.jpg");
+
+	@media (min-width: $tablet-width) {
+		background-image: url("../img/catalog-1-tablet.jpg");
+	}
+}
+
+.catalog-main__item--2 {
+	display: none;
+	
+	@media (min-width: $tablet-width) {
+		display: block;
+		background-image: url("../img/catalog-2-tablet.jpg");
+	}
 }
 
 .catalog-main__link {
@@ -43,6 +99,11 @@
 	color: #ffffff;
 	text-decoration: none;
 	text-transform: uppercase;
+
+	@media (min-width: $tablet-width) {
+		padding-top: 42px;
+		text-align: left;
+	}
 }
 
 .catalog-main__number {
@@ -57,6 +118,15 @@
 		top: 10px;
 		width: 70px;
 		height: 1px;
+
+		@media (min-width: $tablet-width) {
+			left: 32px;
+		}
+	}
+
+	@media (min-width: $tablet-width) {
+		padding-left: 0;
+		padding-right: 62px;
 	}
 }
 
@@ -72,11 +142,23 @@
 	@include reset-list();
 	display: flex;
 	justify-content: space-between;
+
+	@media (min-width: $tablet-width) {
+		width: 138px;
+		margin: 0 auto;
+	}
 }
 
 .catalog-main__pagination-item {
 	line-height: 0;
 	font-size: 0;
+}
+
+.catalog-main__pagination-item--3,
+.catalog-main__pagination-item--4 {
+	@media (min-width: $tablet-width) {
+		display: none;
+	}
 }
 
 .catalog-main__pagination-button {

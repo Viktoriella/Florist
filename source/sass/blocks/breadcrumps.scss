@@ -2,6 +2,10 @@
 	padding-top: 30px;
 	margin-bottom: 50px;
 	border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+	@media (min-width: $tablet-width) {
+		margin-bottom: 30px;
+	}
 }
 
 .breadcrumps__list {
@@ -16,6 +20,12 @@
 	color: rgba(255, 255, 255, 0.5);
 	font-size: 16px;
 	text-decoration: none;
+
+	@media (min-width: $tablet-width) {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		font-size: 20px;
+	}
 
 	&:hover {
 		color: rgba(255, 255, 255, 1);

@@ -1,5 +1,11 @@
 .socials {
 	margin-bottom: 30px;
+
+	@media (min-width: $tablet-width) {
+		width: 460px;
+		margin: 0 auto;
+		margin-bottom: 35px;
+	}
 }
 
 .socials__list {
@@ -20,6 +26,12 @@
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: 18px 18px;	
+
+	@media (min-width: $tablet-width) {
+		width: 54px;
+		height: 54px;
+		background-size: 28px 28px;	
+	}
 }
 
 .socials__link--footer {
@@ -53,6 +65,10 @@
 		box-sizing: border-box;
 		border: 9px solid $maroon-bg;
 		background-image: url("../img/ico-whats-hover.svg");
+
+		@media (min-width: $tablet-width) {
+			border: 13px solid $maroon-bg;
+		}
 	}
 }
 
@@ -60,6 +76,13 @@
 	&:hover,
 	&:active {
 		border: 5px solid $maroon-bg;
+	}
+
+	@media (min-width: $tablet-width) {
+		&:hover,
+		&:active {
+			border: 14px solid $maroon-bg;
+		}
 	}
 }
 
@@ -70,5 +93,9 @@
 	&:active {
 		background-image: url("../img/ico-vk-hover.svg");
 	}
+}
+
+.socials__footer {
+	width: 250px;
 }
 
