@@ -8,6 +8,10 @@
 	@media (min-width: $tablet-width) {
 		margin-left: 50px;
 	}
+
+	@media (min-width: $desktop-width) {
+		margin-left: 96px;
+	}
 }
 
 .main-logo--center {

@@ -2,6 +2,12 @@
 	@media (min-width: $tablet-width) {
 		padding-top: 30px;
 	}
+
+	@media (min-width: $desktop-width) {
+		display: flex;
+		padding-top: 0;
+		margin-top: -135px;
+	}
 }
 
 .inner__main-image {
@@ -25,6 +31,13 @@
 		font-size: 40px;
 		line-height: 44px;
 	}
+
+	@media (min-width: $desktop-width) {
+		width: 515px;
+		margin-bottom: 50px;
+		font-size: 50px;
+		line-height: 55px;
+	}
 }
 
 .inner__text {
@@ -39,6 +52,12 @@
 		font-size: 20px;
 		line-height: 24px;
 	}
+
+	@media (min-width: $desktop-width) {
+		font-size: 18px;
+		line-height: 27px;
+		width: 565px;
+	}
 }
 
 .inner__order-button {
@@ -49,6 +68,10 @@
 	@media (min-width: $tablet-width) {
 		margin-bottom: 70px;
 	}
+
+	@media (min-width: $desktop-width) {
+		margin-bottom: 100px;
+	}
 }
 
 .inner__wrapper {
@@ -58,5 +81,40 @@
 		align-items: flex-start;
 		padding-left: 60px;
 		padding-right: 59px;
+	}
+
+	@media (min-width: $desktop-width) {
+		position: relative;
+		padding-top: 253px;
+		padding-left: 114px;
+		padding-right: 95px;
+	}
+}
+
+.inner__intagram {
+	display: none;
+	
+	@media (min-width: $desktop-width) {
+		display: block;
+		position: absolute;
+		font-size: 18px;
+		padding-right: 75px;
+		bottom: 0;
+		right: 0;
+		color: #ffffff;
+		text-decoration: none;
+
+		&::after {
+			@include pseudo();
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			left: auto;
+			width: 16px;
+			height: 16px;
+			background-image: url("../img/ico-inst.svg");
+			background-repeat: no-repeat;
+			background-size: 16px 16px;
+		}
 	}
 }

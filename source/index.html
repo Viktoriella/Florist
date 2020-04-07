@@ -40,19 +40,19 @@
 			<h1 class="intro__title">Флористика с душой</h1>
 			<a class="button intro__link" href="#">Смотреть работы</a>
 
-			<section class="socials">
-				<ul class="socials__list">
+			<section class="socials socials--top">
+				<ul class="socials__list socials__list--top">
 					<li class="socials__item">
-						<a class="socials__link socials__link--inst" href="#">Инстаграм</a>
+						<a class="socials__link socials__link--top socials__link--inst" href="#">Инстаграм</a>
 					</li>
 					<li class="socials__item">
-						<a class="socials__link socials__link--fb" href="#">Facebook</a>
+						<a class="socials__link socials__link--top socials__link--fb" href="#">Facebook</a>
 					</li>
 					<li class="socials__item">
-						<a class="socials__link socials__link--whats" href="#">WhatsApp</a>
+						<a class="socials__link socials__link--top socials__link--whats" href="#">WhatsApp</a>
 					</li>
 					<li class="socials__item">
-						<a class="socials__link socials__link--vk" href="#">VKontakte</a>
+						<a class="socials__link socials__link--top socials__link--vk" href="#">VKontakte</a>
 					</li>
 				</ul>
 			</section>
@@ -78,14 +78,14 @@
 						</a>
 					</li>
 				</div>
-				<div class="catalog-main__wrapper visually-hidden">
-					<li class="catalog-main__item visually-hidden">
+				<div class="catalog-main__wrapper catalog-main__wrapper--only-desktop">
+					<li class="catalog-main__item catalog-main__item--3">
 						<a class="catalog-main__link" href="#">
 							<p class="catalog-main__number">03</p>
 							<p class="catalog-main__text">Композиции</p>
 						</a>
 					</li>
-					<li class="catalog-main__item visually-hidden">
+					<li class="catalog-main__item catalog-main__item--4">
 						<a class="catalog-main__link" href="#">
 							<p class="catalog-main__number">04</p>
 							<p class="catalog-main__text">Оформление композиций</p>
@@ -112,12 +112,15 @@
 
 		<section class="actions">
 			<picture>
+				<source media="(min-width: 1920px)" srcset="img/actions-desktop.jpg">
 				<source media="(min-width: 768px)" srcset="img/actions-tablet.jpg">
 				<img class="actions__image" src="img/actions-mobile.jpg" alt="Акция на свадебное оформление">
 			</picture>
-			<h2 class="actions__title">Акционные предложения</h2>
-			<p class="actions__description">При заказе свадебного оформления предоставляется скидка на букет невесты и бутоньерку в размере 30%</p>
-			<a class="button actions__button" href="#">Заказать оформление</a>
+			<div class="actions__wrapper">
+				<h2 class="actions__title">Акционные предложения</h2>
+				<p class="actions__description">При заказе свадебного оформления предоставляется скидка на букет невесты и бутоньерку в размере 30%</p>
+				<a class="button actions__button" href="#">Заказать оформление</a>
+			</div>
 		</section>
 	</main>
 

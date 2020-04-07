@@ -13,6 +13,14 @@
 		padding-top: 331px;
 		background-image: url("../img/bg-main-tablet.jpg");
 	}
+
+	@media (min-width: $desktop-width) {
+		margin-top: -135px;
+		background-image: url("../img/bg-main-desktop.jpg");
+		padding-top: 323px;
+		padding-left: 95px;
+		padding-right: 97px;
+	}
 }
 
 .intro__title {
@@ -32,6 +40,15 @@
 		line-height: 77px;
 		letter-spacing: 0.09em;
 	}
+
+	@media (min-width: $desktop-width) {
+		width: 814px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 80px;
+		font-size: 120px;
+		line-height: 132px;
+	}
 }
 
 .intro__link {
@@ -42,6 +59,10 @@
 
 	@media (min-width: $tablet-width) {
 		margin-bottom: 211px;
+	}
+
+	@media (min-width: $desktop-width) {
+		margin-bottom: 36px;
 	}
 }
 

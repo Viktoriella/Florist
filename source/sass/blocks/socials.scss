@@ -8,10 +8,22 @@
 	}
 }
 
+.socials--top {
+	@media (min-width: $desktop-width) {
+		width: auto;
+	}
+}
+
 .socials__list {
 	@include reset-list();
 	display: flex;
 	justify-content: space-between;
+}
+
+.socials__list--top {
+	@media (min-width: $desktop-width) {
+		flex-direction: column;
+	}
 }
 
 .socials__link {
@@ -31,6 +43,12 @@
 		width: 54px;
 		height: 54px;
 		background-size: 28px 28px;	
+	}
+}
+
+.socials__link--top {
+	@media (min-width: $desktop-width) {
+		background-color: transparent;
 	}
 }
 

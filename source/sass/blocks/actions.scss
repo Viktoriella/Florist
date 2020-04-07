@@ -1,6 +1,23 @@
 .actions {
 	margin-bottom: 100px;
 	text-align: center;
+
+	@media (min-width: $desktop-width) {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		justify-content: space-between;
+		text-align: left;
+		padding-left: 158px;
+		padding-right: 127px;
+		margin-bottom: 170px;
+	}
+}
+
+.actions__wrapper {
+	@media (min-width: $desktop-width) {
+		width: 440px;
+	}
 }
 
 .actions__image {
@@ -14,6 +31,11 @@
 		height: 323px;
 		margin: 0 auto;
 		margin-bottom: 30px;
+	}
+
+	@media (min-width: $desktop-width) {
+		width: 697px;
+		height: 410px;
 	}
 }
 
@@ -35,6 +57,11 @@
 		padding-bottom: 15px;
 	}
 
+	@media (min-width: $desktop-width) {
+		line-height: 51px;
+		margin-bottom: 25px;
+	}
+
 	&:after {
 		@include pseudo();
 		width: 85px;
@@ -46,6 +73,11 @@
 		@media (min-width: $tablet-width) {
 			left: 50%;
 			transform: translateX(-50%);
+		}
+
+		@media (min-width: $desktop-width) {
+			left: 0;
+			transform: none;
 		}
 	}
 }
@@ -60,6 +92,11 @@
 		width: 460px;
 		margin: 0 auto;
 		margin-bottom: 15px;
+	}
+
+	@media (min-width: $desktop-width) {
+		width: auto;
+		margin-bottom: 45px;
 	}
 }
 

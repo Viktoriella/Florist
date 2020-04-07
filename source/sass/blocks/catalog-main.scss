@@ -4,6 +4,10 @@
 	@media (min-width: $tablet-width) {
 		text-align: center;
 	}
+
+	@media (min-width: $desktop-width) {
+		margin-bottom: 170px;
+	}
 }
 
 .catalog-main__list {
@@ -15,6 +19,11 @@
 	@media (min-width: $tablet-width) {
 		min-height: 450px;
 		margin-bottom: 30px;
+	}
+
+	@media (min-width: $desktop-width) {
+		display: flex;
+		justify-content: space-between;
 	}
 }
 
@@ -43,6 +52,10 @@
 			background-color: #ffffff;
 		}
 	}
+
+	@media (min-width: $desktop-width) {
+		margin-bottom: 98px;
+	}
 }
 
 .catalog-main__wrapper {
@@ -51,6 +64,20 @@
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
+	}
+
+	@media (min-width: $desktop-width) {
+		width: 720px;
+		position: static;
+	}
+}
+
+.catalog-main__wrapper--only-desktop {
+	display: none;
+	
+	@media (min-width: $desktop-width) {
+		display: flex;
+		position: static;
 	}
 }
 
@@ -83,6 +110,18 @@
 	@media (min-width: $tablet-width) {
 		display: block;
 		background-image: url("../img/catalog-2-tablet.jpg");
+	}
+}
+
+.catalog-main__item--3 {
+	@media (min-width: $tablet-width) {
+		background-image: url("../img/catalog-3-tablet.jpg");
+	}
+}
+
+.catalog-main__item--4 {
+	@media (min-width: $tablet-width) {
+		background-image: url("../img/catalog-4-tablet.jpg");
 	}
 }
 
@@ -122,6 +161,10 @@
 		@media (min-width: $tablet-width) {
 			left: 32px;
 		}
+
+		@media (min-width: $desktop-width) {
+			top: 13px;
+		}
 	}
 
 	@media (min-width: $tablet-width) {
@@ -146,6 +189,10 @@
 	@media (min-width: $tablet-width) {
 		width: 138px;
 		margin: 0 auto;
+	}
+
+	@media (min-width: $desktop-width) {
+		display: none;
 	}
 }
 

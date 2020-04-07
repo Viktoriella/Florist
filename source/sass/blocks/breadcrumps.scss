@@ -6,11 +6,22 @@
 	@media (min-width: $tablet-width) {
 		margin-bottom: 30px;
 	}
+
+	@media (min-width: $desktop-width) {
+		padding-top: 21px;
+		padding-left: 463px;
+		padding-right: 463px;
+	}
 }
 
 .breadcrumps__list {
 	@include reset-list();
 	text-align: center;
+
+	@media (min-width: $desktop-width) {
+		display: flex;
+		justify-content: space-between;
+	}
 }
 
 .breadcrumps__link {
@@ -25,6 +36,10 @@
 		padding-top: 10px;
 		padding-bottom: 10px;
 		font-size: 20px;
+	}
+
+	@media (min-width: $desktop-width) {
+		font-size: 16px;
 	}
 
 	&:hover {

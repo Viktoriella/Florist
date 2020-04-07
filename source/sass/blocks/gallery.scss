@@ -13,6 +13,11 @@
 		margin-bottom: 70px;
 		order: -1;
 	}
+
+	@media (min-width: $desktop-width) {
+		order: 0;
+		width: 552px;
+	}
 }
 
 .gallery__item {
@@ -20,5 +25,9 @@
 
 	@media (min-width: $tablet-width) {
 		margin-right: 23px;
+	}
+
+	@media (min-width: $desktop-width) {
+		margin-right: 20px;
 	}
 }

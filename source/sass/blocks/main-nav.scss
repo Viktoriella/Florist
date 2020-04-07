@@ -33,6 +33,10 @@
 		margin-right: 50px;
 		margin-top: 10px;
 	}
+
+	@media (min-width: $desktop-width) {
+		margin-right: 90px;
+	}
 }
 
 .main-nav__burger--closed {
@@ -89,6 +93,10 @@
 	@media (min-width: $tablet-width) {
 		padding-bottom: 126px;
 	}
+
+	@media (min-width: $desktop-width) {
+		padding-top: 170px;
+	}
 }
 
 .main-nav__list--closed {
@@ -118,6 +126,12 @@
 		padding-bottom: 35px;
 		font-size: 30px;
 		line-height: 33px;
+	}
+
+	@media (min-width: $desktop-width) {
+		line-height: 39px;
+		padding-top: 38px;
+		padding-bottom: 38px;
 	}
 }
 

@@ -7,6 +7,12 @@
 		padding-left: 40px;
 		padding-right: 40px;
 	}
+
+	 @media (min-width: $desktop-width){
+	 	padding-top: 170px;
+	 	padding-left: 215px;
+	 	padding-right: 205px;
+	 }
 }
 
 .page-main__inner {
