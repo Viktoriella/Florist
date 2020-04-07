@@ -13,11 +13,11 @@
 	<include src="build/img/sprite.svg"></include>
 </div>
 	<header class="page-header">
-		<a class="main-logo">
+		<a class="main-logo main-logo--left">
 			<img class="main-logo__image" src="img/logo.svg" alt="Весна всегда">
 		</a>
 		<nav class="main-nav">
-			<button type="button" class="main-nav__burger main-nav__burger--closed main-nav__burger--nojs">Закрыть меню</button>
+			<button type="button" class="main-nav__burger main-nav__burger--closed main-nav__burger--nojs">Меню</button>
 			<ul class="main-nav__list main-nav__list--nojs main-nav__list--closed">
 			 	 <li class="main-nav__item">
 			 	 	<a class="main-nav__link main-nav__link--active">Свадебная флористика</a>
@@ -38,25 +38,29 @@
 		</nav>
 		<section class="intro">
 			<h1 class="intro__title">Флористика с душой</h1>
-			<a class="button intro__link" href="#">Смотреть работы</a>
+			<a class="button intro__link" href="#catalog-main">Смотреть работы</a>
 
-			<section class="socials socials--top">
-				<ul class="socials__list socials__list--top">
-					<li class="socials__item">
-						<a class="socials__link socials__link--top socials__link--inst" href="#">Инстаграм</a>
-					</li>
-					<li class="socials__item">
-						<a class="socials__link socials__link--top socials__link--fb" href="#">Facebook</a>
-					</li>
-					<li class="socials__item">
-						<a class="socials__link socials__link--top socials__link--whats" href="#">WhatsApp</a>
-					</li>
-					<li class="socials__item">
-						<a class="socials__link socials__link--top socials__link--vk" href="#">VKontakte</a>
-					</li>
-				</ul>
-			</section>
-			<a class="intro__down-link" href="#catalog-main">Листать дальше</a>
+			<div class="intro__wrapper">
+				<section class="socials socials--top">
+					<ul class="socials__list socials__list--top">
+						<li class="socials__item">
+							<a class="socials__link socials__link--top socials__link--inst" href="#">Инстаграм</a>
+						</li>
+						<li class="socials__item">
+							<a class="socials__link socials__link--top socials__link--fb" href="#">Facebook</a>
+						</li>
+						<li class="socials__item">
+							<a class="socials__link socials__link--top socials__link--whats" href="#">WhatsApp</a>
+						</li>
+						<li class="socials__item">
+							<a class="socials__link socials__link--top socials__link--vk" href="#">VKontakte</a>
+						</li>
+					</ul>
+				</section>
+				<a class="intro__down-link" href="#catalog-main">cмотреть каталог
+				<span class="intro__down-link--desktop"></span>
+				</a>
+			</div>
 		</section>	
 	</header>
 

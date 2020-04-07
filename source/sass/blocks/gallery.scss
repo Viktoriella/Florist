@@ -1,13 +1,9 @@
 .gallery {
-	@include reset-list();
-	display: flex;
-	overflow: hidden;
 	margin-left: 20px;
 	margin-right: 0;
 	margin-bottom: 45px;
 
 	@media (min-width: $tablet-width) {
-		width: 649px;
 		margin-left: 0;
 		margin-top: 30px;
 		margin-bottom: 70px;
@@ -15,7 +11,22 @@
 	}
 
 	@media (min-width: $desktop-width) {
+		position: relative;
 		order: 0;
+	}
+}
+
+.gallery__list {
+	@include reset-list();
+	position: relative;
+	display: flex;
+	overflow: hidden;
+	
+	@media (min-width: $tablet-width) {
+		width: 649px;
+	}
+
+	@media (min-width: $desktop-width) {
 		width: 552px;
 	}
 }
@@ -29,5 +40,40 @@
 
 	@media (min-width: $desktop-width) {
 		margin-right: 20px;
+	}
+}
+
+.gallery__next {
+	display: none;
+	
+	@media (min-width: $desktop-width) {
+		z-index: 2;
+		display: block;
+		position: absolute;
+		width: 46px;
+		height: 46px;
+		background-color: rgba(0, 0, 0, 0.4);
+		top: 50%;
+		transform: translateY(-50%);
+		right: -23px;
+		font-size: 0;
+		border-radius: 50%;
+		border: 1px solid #ffffff;
+		cursor: pointer;
+	
+		&::after {
+			@include pseudo();
+			top: 50%;
+			left: 15px;
+			width: 8px;
+			height: 8px;
+			border-top: 1px solid #ffffff;
+			border-right: 1px solid #ffffff;
+			transform: rotate(45deg) translate(-50%, -50%);
+		}
+
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.6);
+		}
 	}
 }

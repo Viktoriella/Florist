@@ -2,8 +2,16 @@
 	display: block;
 	width: 96px;
 	height: 29px;
-	margin-left: 16px; 
 	margin-bottom: 20px;
+
+	@media (min-width: $tablet-width) {
+		width: 120px;
+		height: 47px;
+	}
+}
+
+.main-logo--left {
+	margin-left: 16px; 
 
 	@media (min-width: $tablet-width) {
 		margin-left: 50px;
@@ -24,6 +32,7 @@
 }
 
 .main-logo__image {
+	display: block;
 	width: 96px;
 	height: 29px;
 

@@ -15,6 +15,7 @@
 			mainNavList.classList.remove('main-nav__list--closed');
 			mainNavBurger.classList.add('main-nav__burger--opened');
 			mainNavBurger.classList.remove('main-nav__burger--closed');
+			mainLogo.classList.remove('main-logo--left');
 			mainLogo.classList.add('main-logo--center');
 
 		} else if (mainNavList.classList.contains('main-nav__list--show')) {
@@ -23,6 +24,7 @@
 			mainNavBurger.classList.add('main-nav__burger--closed');
 			mainNavBurger.classList.remove('main-nav__burger--opened');
 			mainLogo.classList.remove('main-logo--center');
+			mainLogo.classList.add('main-logo--left');
 		};
 	};
 

@@ -1,6 +1,10 @@
 .actions {
 	margin-bottom: 100px;
-	text-align: center;
+	text-align: left;
+
+	@media (min-width: $tablet-width) {
+		text-align: center;
+	}
 
 	@media (min-width: $desktop-width) {
 		display: flex;

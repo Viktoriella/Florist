@@ -13,6 +13,24 @@
 	text-align: center;
 	background-color: $maroon-bg;
 	z-index: 11;
+
+	@media (min-width: $tablet-width) {
+		width: 374px;
+		padding-left: 45px;
+		padding-right: 45px;
+		padding-top: 104px;
+		padding-bottom: 78px;
+	}
+
+	@media (min-width: $desktop-width) {
+		width: 249px;
+		padding-right: 66px;
+		padding-left: 401px;
+		padding-top: 55px;
+		padding-bottom: 55px;
+		background-image: url("../img/popup-desktop.jpg");
+		background-repeat: no-repeat;
+	}
 }
 
 .popup--show {
@@ -44,6 +62,18 @@
 	line-height: 22px;
 	letter-spacing: 0.09em;
 	text-transform: uppercase;
+
+	@media (min-width: $tablet-width) {
+		font-size: 30px;
+		line-height: 33px;
+		margin-bottom: 48px;
+	}
+
+	@media (min-width: $desktop-width) {
+		font-size: 20px;
+		line-height: 22px;
+		margin-bottom: 27px;
+	}
 }
 
 .popup__text-input {
@@ -57,11 +87,23 @@
 	border: 1px solid rgba(246, 246, 249, 0.2);
 	margin-bottom: 16px;
 
+	@media (min-width: $tablet-width) {
+		margin-bottom: 25px;
+	}
+
+	@media (min-width: $desktop-width) {
+		margin-bottom: 17px;
+	}
+
 	&::placeholder {
 		font-size: 14px;
 		line-height: 15px;
 		letter-spacing: -0.01em;
 		color: #ffffff;
+
+		@media (min-width: $tablet-width) {
+			font-size: 20px;
+		}
 	}
 }
 
@@ -73,6 +115,14 @@
 	background-color: #ffffff;
 	color: #010001;
 	border: none;
+
+	@media (min-width: $tablet-width) {
+		margin-top: 25px;
+	}
+
+	@media (min-width: $desktop-width) {
+		margin-top: 10px;
+	}
 
 	&:hover {
 		background-color: #010001;

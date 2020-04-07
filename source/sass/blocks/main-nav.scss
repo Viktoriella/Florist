@@ -13,7 +13,7 @@
 	position: absolute;
 	display: block;
 	right: 20px;
-	top: -55px;
+	top: -78px;
 	width: 37px;
 	height: 37px;
 	background-color: transparent;
@@ -35,11 +35,21 @@
 	}
 
 	@media (min-width: $desktop-width) {
+		width: 104px;
+		height: 76px;
 		margin-right: 90px;
+
 	}
 }
 
 .main-nav__burger--closed {
+	@media (min-width: $desktop-width) {
+		font-size: 20px;
+		letter-spacing: 0.06em;
+		color: #ffffff;
+		text-transform: uppercase;
+		padding-left: 40px;
+	}
 
 	&::before {
 		top: 12px;
@@ -49,11 +59,27 @@
 		border-top: 1px solid #ffffff;
 		border-bottom: 1px solid #ffffff;
 	}
+
+	&::before {
+		top: 12px;
+		height: 10px;
+		width: 37px;
+		background: none;
+		border-top: 1px solid #ffffff;
+		border-bottom: 1px solid #ffffff;
+
+		@media (min-width: $desktop-width) {
+			height: 8px;
+			width: 23px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
 }
 
 .main-nav__burger--opened {
 	@media (min-width: $tablet-width) {
-		top: -167px;
+		top: -190px;
 	}
 
 	&::before {
@@ -63,6 +89,13 @@
 		transform: rotate(45deg);
 		top: 17px;
 		left: 3px;
+
+		@media (min-width: $desktop-width) {
+			height: 2px;
+			width: 40px;
+			top: 37px;
+			left: 34px;
+		}
 	}
 
 	&::after {
@@ -72,6 +105,13 @@
 		left: 3px;
 		background-color: rgba(255, 255, 255, 0.5);
 		transform: rotate(-45deg);
+
+		@media (min-width: $desktop-width) {
+			height: 2px;
+			width: 40px;
+			top: 37px;
+			left: 34px;
+		}
 	}	
 }
 
