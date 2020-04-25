@@ -1,7 +1,6 @@
 .intro {
 	min-height: 363px;
 	padding-top: 103px;
-	background-image: url("../img/bg-main-mobile.jpg");
 	background-repeat: no-repeat;
 	text-align: center;
 	padding-left: 35px;
@@ -11,7 +10,6 @@
 		min-height: 693px;
 		margin-top: -108px;
 		padding-top: 331px;
-		background-image: url("../img/bg-main-tablet.jpg");
 	}
 
 	@media (min-width: $desktop-width) {
@@ -19,7 +17,31 @@
 		padding-top: 323px;
 		padding-left: 95px;
 		padding-right: 97px;
+	}
+}
+
+.no-webp .intro,
+.no-js .intro {
+	background-image: url("../img/bg-main-mobile.jpg");
+
+	@media (min-width: $tablet-width) {
+		background-image: url("../img/bg-main-tablet.jpg");
+	}
+
+	@media (min-width: $desktop-width) {
 		background-image: url("../img/bg-main-desktop.jpg");
+	}
+}
+
+.webp .intro {
+	background-image: url("../img/bg-main-mobile.webp");
+
+	@media (min-width: $tablet-width) {
+		background-image: url("../img/bg-main-tablet.webp");
+	}
+
+	@media (min-width: $desktop-width) {
+		background-image: url("../img/bg-main-desktop.webp");
 	}
 }
 

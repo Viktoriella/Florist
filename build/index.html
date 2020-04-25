@@ -6,7 +6,8 @@
 	<meta name="description" content="Цветочный магазин предлагает широкий ассортимент цветов, украшений и невероятного оформления">
 	<meta name="keywords" content="Цветочный магазин, флористы, флористика, свадебные букеты">
 	<meta name="viewport" content="width=device-width,initiate-scale=1">
-	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/modernizr-custom.js"></script>
+	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 <div style="display: none">
@@ -116,8 +117,11 @@
 
 		<section class="actions">
 			<picture>
+				<source media="(min-width: 1920px)" srcset="img/actions-desktop.webp" type="image/webp">
 				<source media="(min-width: 1920px)" srcset="img/actions-desktop.jpg">
+				<source media="(min-width: 768px)" srcset="img/actions-tablet.webp" type="image/webp">
 				<source media="(min-width: 768px)" srcset="img/actions-tablet.jpg">
+				<source srcset="img/actions-mobile.webp" type="image/webp">
 				<img class="actions__image" src="img/actions-mobile.jpg" alt="Акция на свадебное оформление">
 			</picture>
 			<div class="actions__wrapper">
