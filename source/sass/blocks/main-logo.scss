@@ -8,6 +8,11 @@
 		width: 120px;
 		height: 47px;
 	}
+
+	@media (min-width: $desktop-width) {
+		width: 158px;
+		height: 49px;
+	}
 }
 
 .main-logo--left {
@@ -39,5 +44,10 @@
 	@media (min-width: $tablet-width) {
 		width: 137px;
 		height: 47px;
+	}
+
+	@media (min-width: $desktop-width) {
+		width: 158px;
+		height: 49px;
 	}
 }
