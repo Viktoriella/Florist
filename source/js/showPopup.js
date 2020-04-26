@@ -1,17 +1,17 @@
 'use strict';
 
 (function(){
-	const actionsButton = document.querySelector('.actions__button');
-	const overlay = document.querySelector('.popup__overlay');
-	const popup = document.querySelector('.popup');
-	const popupCloseButton = popup.querySelector('.popup__close');
+	var actionsButton = document.querySelector('.actions__button');
+	var overlay = document.querySelector('.popup__overlay');
+	var popup = document.querySelector('.popup');
+	var popupCloseButton = popup.querySelector('.popup__close');
 
-	const closePopup = function() {
+	var closePopup = function() {
 		popup.classList.remove('popup--show');
 		overlay.classList.remove('popup__overlay--show');
 	};
 
-	const popupHandler = function() {
+	var popupHandler = function() {
 		popup.classList.add('popup--show');
 		overlay.classList.add('popup__overlay--show');
 
@@ -20,7 +20,7 @@
 			closePopup();
 		});
 
-		const closePopupEsc = function(evt) {
+		var closePopupEsc = function(evt) {
 			if (evt.keyCode === 27) {
 				evt.preventDefault();
 				closePopup();

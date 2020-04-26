@@ -1,15 +1,15 @@
 'use strict';
 
 (function(){
-	const mainNav = document.querySelector('.main-nav');
-	const mainNavList = mainNav.querySelector('.main-nav__list');
-	const mainNavBurger = mainNav.querySelector('.main-nav__burger');
-	const mainLogo = document.querySelector('.main-logo');
+	var mainNav = document.querySelector('.main-nav');
+	var mainNavList = mainNav.querySelector('.main-nav__list');
+	var mainNavBurger = mainNav.querySelector('.main-nav__burger');
+	var mainLogo = document.querySelector('.main-logo');
 
 	mainNav.classList.remove('main-nav__list--nojs');
 	mainNavBurger.classList.remove('main-nav__burger--nojs');
 
-	const burgerHandler = function() {
+	var burgerHandler = function() {
 		if (mainNavList.classList.contains('main-nav__list--closed')) {
 			mainNavList.classList.add('main-nav__list--show');
 			mainNavList.classList.remove('main-nav__list--closed');
